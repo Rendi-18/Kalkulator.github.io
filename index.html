@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form name="calculator">
+  
+        <table class="tabel">
+         <p>Calculator by Rendi Dwi Pratama</p>
+         <tr>
+          <td>X</td><td>:</td><td><input type="number" name="angka1" id="angka1"></td>
+         </tr>
+         <tr>
+          <td>Y</td><td>:</td><td><input type="number" name="angka2" id="angka2"></td>
+         </tr>
+         <tr>
+          <td colspan="3">
+              <br>
+           <input class="tombol" type="button" id="submit" value="correct">
+          </td>
+         </tr>
+        </table>
+       </form>
+
+
+       <p>a = <span id="a" class="a"></span></p>
+       <p>b = <span id="b" class="b"></span></p>
+       <br>
+
+       <p>ϕ1 = <span id="ϕ1"></span></p>
+       <p>c1 = <span id="c1"></span></p>
+       <p>γ1 = <span id="γ1"></span></p>
+        <br>
+
+       <p>ϕ2 = <span id="ϕ2"></span></p>
+       <p>c2 = <span id="c2"></span></p>
+       <p>γ2 = <span id="γ2"></span></p>
+        <br>
+
+       <p>a. Gaya Tekanan lateral aktif pada dinding</p>
+       <p>1. Lapisan atas, tanah berlempung <span style="font-style: italic;">(sand clay)</span></p>
+       <p>Ka = $tan^2(45-(ϕ1)/2)$</p>
+       <p>Ka = <span id="ka1"></span></p>
+
+       <p>merupakan tanah berkohesi, maka dihitung kedalaman daerah crack:</p>
+       <p>Z<sub>0</sub> = $(2c1)/(γ1sqrt(Ka1))$</p>
+       <p>Z<sub>0</sub> = <span id="z0"></span></p>
+
+       <p>Karena daerah crack, Z<sub>0</sub> > <span id="c">X</span> meter (lebih besar tebal lapisan tanah berlempung)</p>
+       <p>Maka panjang daerah crack dianggap hanya sampai setebal lapisan tanah lempung, <span id="d">X</span> meter</p>
+       <br>
+
+       <p>2. Lapisan atas, tanah pasir <span style="font-style: italic;">(sand)</span></p>
+       <p>Ka = $tan^2(45-(ϕ2)/2)$</p>
+       <p>Ka = <span id="ka2"></span></p>
+
+       <p>Pada kedalaman, z = <span id="e">X</span> meter, tekanan lateral aktif merupakan berat dari lapisan di atasnya tetapi menggunakan nilai Ka = <span id="f">X</span>, kerana tekanan aktif untuk lapisan bawah, jadi:</p>
+
+       <p>σ'<sub>a</sub> = $γ1*z*Ka$</p>
+       <p>σ'<sub>a</sub> = <span id="σ"></span></p>
+
+       <p>Selanjutnya, pada z = <span id="g">X</span> meter, tekanan lateral aktif adalah</p>
+
+       <p>σ'<sub>a</sub> = <span id="h">X</span> + $γ2*z*Ka$</p>
+       <p>σ'<sub>a</sub> = <span id="σ2"></span></p>
+       <br>
+
+       <p>Besaran gaya tekanan lateral aktif:</p>
+       <p>Akibat lapisan tanah atas <span style="font-style: italic;">(sand clay)</span> </p>
+       <p>P<sub>a-1</sub> = <span id="i"></span></p>
+       <br>
+
+       <p>Akibat lapisan tanah bawah <span style="font-style: italic;">(sand)</span> </p>
+       <p>P<sub>a-2</sub> = <span id="j"></span></p>
+        <br>
+
+
+       <p>Total Gaya Tekanan Lateral Aktif pada Dinding:</p>
+       <p>P<sub>a</sub> = P<sub>a-1</sub> + P<sub>a-2</sub> = <span id="k"></span></p>
+
+        <p>z = $((Pa1)(z1)+(Pa2)(z2))/(Pa)$</p>
+        <p>z = <span id="l"></span></p>
+
+
+
+
+        <script src="script.js"></script>
+    <script>
+        MathJax = {
+        loader: {load: ['input/asciimath', 'output/chtml', 'ui/menu']},
+        asciimath: {
+        delimiters: [['$','$'], ['`','`']]
+        }
+        };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js">
+    </script>
+ 
+</body>
+</html>
