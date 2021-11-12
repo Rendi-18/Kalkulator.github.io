@@ -5,6 +5,8 @@
 //    }
    
 
+
+
 const angka1 = document.getElementById('angka1');
 const angka2 = document.getElementById('angka2');
 const submit = document.getElementById('submit');
@@ -63,12 +65,12 @@ submit.addEventListener('click', function()
     z2.innerHTML = b.toFixed(2) +' m'
 
     ϕ1.innerHTML = ϕ11 + '°'
-    c1.innerHTML = 13.12 + ' kN/m2'
-    γ1.innerHTML = 15.82 + ' kN/m3'
+    c1.innerHTML = 13.12 + ' kN/m<sup>2</sup>'
+    γ1.innerHTML = 15.82 + ' kN/m<sup>3</sup>'
 
     ϕ2.innerHTML = ϕ21 + '°'
-    c2.innerHTML = 0 + ' kN/m2'
-    γ2.innerHTML = 17.28 + ' kN/m3'
+    c2.innerHTML = 0 + ' kN/m<sup>2</sup>'
+    γ2.innerHTML = 17.28 + ' kN/m<sup>3</sup>'
 
     ka1.innerHTML = ka11.toFixed(2)
     z0.innerHTML = z01.toFixed(2)
@@ -81,12 +83,12 @@ submit.addEventListener('click', function()
     document.getElementById('e').innerHTML = a;
     document.getElementById('f').innerHTML = ka21.toFixed(2);
 
-    σ.innerHTML = σ1.toFixed(2) + ' kN/m2';
+    σ.innerHTML = σ1.toFixed(2) + ' kN/m<sup>2</sup>';
 
     document.getElementById('g').innerHTML = (a + b).toFixed(2);
     document.getElementById('h').innerHTML = σ1.toFixed(2)
 
-    σ2.innerHTML = σ21.toFixed(2) + ' kN/m2';
+    σ2.innerHTML = σ21.toFixed(2) + ' kN/m<sup>2</sup>';
 
     i.innerHTML = "("+ σ1.toFixed(2)+")"+"("+ b.toFixed(2)+")"+ ' = ' + i1.toFixed(2) + ' kN/m';
     j.innerHTML = 0.5 + "("+ (17.28*b*ka21).toFixed(2)+")"+"("+ b.toFixed(2)+")"+ ' = ' + j1.toFixed(2) + ' kN/m';
